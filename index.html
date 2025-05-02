@@ -2,75 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dr.Dori - Your Medical Assistant in Korea</title>
-  <meta name="description" content="Dr.Dori helps foreigners in Korea get the right medical help. Chat, find hospitals, and understand prescriptions easily.">
-  <meta property="og:title" content="Dr.Dori - Your Medical Assistant in Korea" />
-  <meta property="og:description" content="Chat with Dori and get help with symptoms, hospitals, and medications in Korea." />
-  <meta property="og:image" content="assets/dori-preview.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr.Dori - Medical Assistant for Foreigners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    /* 기존 스타일 유지하되 텍스트 및 이미지 수정 */
-    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #fff; }
-    header { background: #E0F7F5; padding: 60px 20px 40px; }
-    .hero { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px; padding: 40px 20px 0; }
-    .hero img { width: 200px; }
-    .hero-text { max-width: 400px; }
-    .hero-text h1 { font-size: 36px; margin-bottom: 10px; }
-    .hero-text p { font-size: 18px; color: #555; }
-    .cta-button { background: #4FD1C5; color: white; padding: 15px 30px; font-size: 18px; font-weight: bold; border-radius: 12px; text-decoration: none; transition: background-color 0.3s; display: inline-block; margin-top: 20px; }
-    .cta-button:hover { background: #38B2AC; }
-    section { padding: 60px 20px; text-align: center; }
-    .features { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px; }
-    .feature-item { width: 300px; background: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.08); padding: 20px; border-radius: 16px; }
-    .feature-item img { width: 100%; border-radius: 12px; }
-    footer { margin-top: 40px; padding: 20px; background: #f0f0f0; color: #666; font-size: 14px; text-align: center; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #e0f7f5;
+      padding: 60px 20px 40px;
+      text-align: center;
+    }
+    header img {
+      width: 140px;
+    }
+    header h1 {
+      font-size: 36px;
+      margin-top: 20px;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+      color: #555;
+    }
+    .cta-button {
+      margin-top: 30px;
+      background: linear-gradient(to right, #4FD1C5, #319795);
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .cta-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .feature-item {
+      background: white;
+      width: 300px;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .feature-item img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .testimonial {
+      max-width: 600px;
+      margin: 40px auto 0;
+      font-style: italic;
+      color: #666;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+      font-size: 14px;
+      color: #777;
+    }
   </style>
 </head>
 <body>
-
-<header>
-  <div class="hero">
+  <header>
     <img src="assets/dori_no_bg.png" alt="Dori the Owl" />
-    <div class="hero-text">
-      <h1>Dr.Dori 🦉</h1>
-      <p>Your friendly medical assistant in Korea – built for foreigners.</p>
-      <a href="https://your-dr-dori-app-link" class="cta-button" target="_blank">Use Dr.Dori App</a>
+    <h1>Meet Dr.Dori 🦉</h1>
+    <p>Your trusted medical guide in Korea – built for foreigners</p>
+    <a href="https://your-dr-dori-app-link" class="cta-button" target="_blank">Open Dr.Dori App</a>
+  </header>
+
+  <section>
+    <h2>How Dori Helps You</h2>
+    <div class="features">
+      <div class="feature-item">
+        <img src="assets/placeholder1.png" alt="Chat Feature" />
+        <p>Chat with Dori to explain your symptoms and get gentle, easy-to-understand guidance.</p>
+      </div>
+      <div class="feature-item">
+        <img src="assets/placeholder2.png" alt="OCR Medication" />
+        <p>Upload a photo of your prescription or medication and receive an English summary.</p>
+      </div>
+      <div class="feature-item">
+        <img src="assets/placeholder3.png" alt="Q&A Community" />
+        <p>Explore our Q&A community to ask or read real medical experiences from other users.</p>
+      </div>
     </div>
-  </div>
-</header>
+  </section>
 
-<section>
-  <h2>👩‍⚕️ What Can Dr.Dori Help You With?</h2>
-  <div class="features">
-    <div class="feature-item">
-      <img src="assets/placeholder1.png" alt="Chat with Dori" />
-      <p><strong>Chat About Symptoms:</strong> Ask Dori about your condition and where to go – no Korean needed.</p>
-    </div>
-    <div class="feature-item">
-      <img src="assets/placeholder2.png" alt="Hospital Finder" />
-      <p><strong>Find a Hospital:</strong> Search by department (진료과) or location, with map links and contact info.</p>
-    </div>
-    <div class="feature-item">
-      <img src="assets/placeholder3.png" alt="Medication OCR" />
-      <p><strong>Interpret Prescriptions:</strong> Upload images and get simple explanations in your language.</p>
-    </div>
-  </div>
-</section>
+  <section>
+    <h2>Why Foreigners Love Dori</h2>
+    <p class="testimonial">
+      "I had stomach pain and didn’t know where to go. Dr.Dori showed me what to do and even explained the medicine label I got. So helpful!"
+    </p>
+  </section>
 
-<section>
-  <h2>✨ Why Dr.Dori?</h2>
-  <p>Dori is not a doctor – but she's smart, multilingual, and always kind. She helps you navigate Korea’s healthcare system when you're lost, sick, or worried. All in your language.</p>
-</section>
+  <section>
+    <h2>Start Your Journey</h2>
+    <a href="https://your-dr-dori-app-link" class="cta-button" target="_blank">Use Dr.Dori Now</a>
+  </section>
 
-<section>
-  <h2>🚀 Start Now</h2>
-  <a href="https://your-dr-dori-app-link" class="cta-button" target="_blank">Open Dr.Dori App</a>
-</section>
-
-<footer>
-  Made with ❤️ by Team Dr.Dori | Contact: helpmedoc.team@gmail.com
-</footer>
-
+  <footer>
+    Made with ❤️ by Team Dr.Dori | Contact: helpmedoc.team@gmail.com
+  </footer>
 </body>
 </html>
