@@ -3,127 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr.Dori - Medical Assistant for Foreigners</title>
+  <title>Dr.Dori - Your Medical Assistant in Korea</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --primary-color: #4FD1C5;
+      --secondary-color: #319795;
+      --text-dark: #333;
+      --text-light: #555;
+      --bg-light: #f9f9f9;
+      --bg-white: #ffffff;
+    }
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Inter', sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
     }
     header {
       background-color: #e0f7f5;
-      padding: 60px 20px 40px;
+      padding: 40px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       text-align: center;
     }
     header img {
-      width: 140px;
+      width: 120px;
+      margin-bottom: 20px;
     }
     header h1 {
-      font-size: 36px;
-      margin-top: 20px;
+      font-size: 32px;
+      margin: 10px 0;
     }
     header p {
-      font-size: 18px;
-      margin-top: 10px;
-      color: #555;
+      font-size: 16px;
+      color: var(--text-light);
+      margin-bottom: 20px;
     }
     .cta-button {
-      margin-top: 30px;
-      background: linear-gradient(to right, #4FD1C5, #319795);
+      background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
       color: white;
-      padding: 15px 30px;
-      font-size: 18px;
-      font-weight: bold;
-      border: none;
-      border-radius: 12px;
+      padding: 12px 28px;
+      border-radius: 8px;
       text-decoration: none;
-      display: inline-block;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-weight: 600;
+      transition: all 0.3s ease;
     }
     .cta-button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      opacity: 0.9;
+      transform: translateY(-2px);
     }
     section {
       padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
       text-align: center;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
     }
     .features {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
+      gap: 24px;
       margin-top: 40px;
     }
     .feature-item {
-      background: white;
+      background: var(--bg-white);
       width: 300px;
       padding: 20px;
       border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      text-align: left;
     }
     .feature-item img {
       width: 100%;
       border-radius: 12px;
       margin-bottom: 12px;
     }
+    .feature-item p {
+      font-size: 15px;
+      color: var(--text-light);
+    }
     .testimonial {
-      max-width: 600px;
-      margin: 40px auto 0;
+      background-color: #ffffff;
+      padding: 40px 20px;
       font-style: italic;
       color: #666;
+      border-left: 6px solid var(--primary-color);
+      margin-top: 60px;
     }
     footer {
+      background-color: #f0f0f0;
       text-align: center;
       padding: 20px;
-      background-color: #f0f0f0;
       font-size: 14px;
       color: #777;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="assets/dori_no_bg.png" alt="Dori the Owl" />
-    <h1>Meet Dr.Dori 🦉</h1>
-    <p>Your trusted medical guide in Korea – built for foreigners</p>
-    <a href="https://your-dr-dori-app-link" class="cta-button" target="_blank">Open Dr.Dori App</a>
+    <img src="assets/dori_no_bg.png" alt="Dr.Dori mascot" />
+    <h1>Dr.Dori – Your Medical Assistant in Korea</h1>
+    <p>Helping foreigners get medical help easily – in their language and without stress.</p>
+    <a href="https://your-dr-dori-app-link" class="cta-button" target="_blank">Launch App</a>
   </header>
 
   <section>
-    <h2>How Dori Helps You</h2>
+    <h2>📱 What You Can Do with Dr.Dori</h2>
     <div class="features">
       <div class="feature-item">
-        <img src="assets/placeholder1.png" alt="Chat Feature" />
-        <p>Chat with Dori to explain your symptoms and get gentle, easy-to-understand guidance.</p>
+        <img src="assets/placeholder1.png" alt="Chat with Dori" />
+        <p><strong>Chat with Dori:</strong> Describe your symptoms in English, and get department suggestions, urgency level, and Korean expressions.</p>
       </div>
       <div class="feature-item">
-        <img src="assets/placeholder2.png" alt="OCR Medication" />
-        <p>Upload a photo of your prescription or medication and receive an English summary.</p>
+        <img src="assets/placeholder2.png" alt="Medicine OCR" />
+        <p><strong>Understand Your Medication:</strong> Upload photos of prescriptions or medicine bags and receive clear English summaries.</p>
       </div>
       <div class="feature-item">
         <img src="assets/placeholder3.png" alt="Q&A Community" />
-        <p>Explore our Q&A community to ask or read real medical experiences from other users.</p>
+        <p><strong>Q&A Community:</strong> Ask medical questions or learn from others’ experiences in our multilingual support forum.</p>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2>Why Foreigners Love Dori</h2>
-    <p class="testimonial">
-      "I had stomach pain and didn’t know where to go. Dr.Dori showed me what to do and even explained the medicine label I got. So helpful!"
-    </p>
+  <section class="testimonial">
+    "I was sick on my first week in Korea. Dr.Dori helped me understand my symptoms, find the right clinic, and even explain the medication I got. It’s like having a Korean friend who's a doctor."
   </section>
 
   <section>
-    <h2>Start Your Journey</h2>
-    <a href="https://your-dr-dori-app-link" class="cta-button" target="_blank">Use Dr.Dori Now</a>
+    <h2>🦉 Try Dr.Dori Now</h2>
+    <a href="https://your-dr-dori-app-link" class="cta-button" target="_blank">Start Chatting</a>
   </section>
 
   <footer>
-    Made with ❤️ by Team Dr.Dori | Contact: helpmedoc.team@gmail.com
+    &copy; 2025 Team Dr.Dori | Contact: helpmedoc.team@gmail.com
   </footer>
 </body>
 </html>
